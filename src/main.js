@@ -6,8 +6,10 @@ import '@/assets/scss/index.scss'
 import '@/utils/vant'
 import FastClick from 'fastclick'
 import VueAMap from 'vue-amap'
+import axios from '@/utils/axios';
 
 Vue.use(VueAMap)
+Vue.prototype.axios = axios
 FastClick.attach(document.body)
 
 
